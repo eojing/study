@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+header > h1 {
+	text-indent: -9999px;
+}
+
+header > .frame {
+	width: 655px;
+	height: 308px;
+	border: 1px solid #000;
+	background-image: url(./../images/visual.jpg);
+	background-size: cover;
+}
+
+footer > .footframe {
+	height: 130px;
+	background-image: url(./../images/bg_bottom.jpg);
+}

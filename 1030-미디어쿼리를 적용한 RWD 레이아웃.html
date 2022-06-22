@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1030-미디어쿼리를 적용한 RWD 레이아웃</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      width: 768px;
+      margin: 30px auto;
+
+    }
+
+    div,
+    header,
+    footer {
+      text-align: center;
+      line-height: 50px;
+      font-weight: 700;
+      font-size: 24px;
+      border-radius: 10px;
+    }
+
+    header {
+      width: 768px;
+      height: 100px;
+      margin-bottom: 10px;
+      background-color: gray;
+    }
+
+
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .subbox {
+      width: 200px;
+      height: 300px;
+      margin-bottom: 10px;
+      background-color: blue;
+    }
+
+    .day {
+      width: 200px;
+      height: 145px;
+      background-color: pink;
+    }
+
+    .contbox {
+      width: 558px;
+      height: 455px;
+      background-color: yellow;
+    }
+
+
+
+    footer {
+      width: 768px;
+      height: 100px;
+      margin-top: 10px;
+      background-color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 문제 768px 기준으로 예시와 같이 스타일링 하시오 -->
+    <header>
+
+      독도월드(메인메뉴)
+
+    </header>
+    <section>
+
+      <div class="left">
+        <div class="subbox">서브메뉴</div>
+        <div class="day">행사일정</div>
+      </div>
+
+      <div class="contbox">주요컨텐츠</div>
+
+    </section>
+    <footer>
+
+      연락처 및 저작권
+
+    </footer>
+  </div>
+</body>
+
+</html>
