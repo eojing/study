@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>570-float을 이용한 박스 나열</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    .subject::after {
+      display: block;
+      clear: both;
+      content: '';
+
+    }
+
+    .subject>li {
+      float: left;
+      width: 180px;
+      height: 90px;
+      color: white;
+      line-height: 90px;
+      text-align: center;
+      background-color: blue;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
+    .subject>li:nth-last-child(even) {
+      background-color: pink;
+    }
+
+
+    .test::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    .test>span {
+      float: left;
+      width: 120px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+        아래의 li를 180*90, 파란테두리를 안쪽으로 생성해서
+        가로로 나열해 보세요. (가세정렬)
+        짝수번째 박스의 배경색을 핑크, 홀수는 파랑으로 합니다.
+    -->
+
+  <ol class="subject">
+    <li>포토샵</li>
+    <li>일러스트</li>
+    <li>UI/UX</li>
+    <li>포트폴리오</li>
+  </ol>
+
+  <p>추천과목</p>
+
+
+  <hr />
+  <!-- 박스사이즈 120*100 만들어서 플롯하세요. -->
+  <div class="test">
+    <span style="background-color:red;">red</span>
+    <span style="background-color:blue;">blue</span>
+    <span style="background-color:green;">green</span>
+    <span style="background-color:yellow;">yellow</span>
+    <span style="background-color:pink;">pink</span>
+  </div>
+
+  <span>플롯연습</span>
+
+</body>
+
+</html>

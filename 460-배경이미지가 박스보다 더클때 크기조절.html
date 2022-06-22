@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>배경이미지가 박스보다 더클때 크기조절</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      padding-bottom: 80px;
+    }
+
+    p {
+      width: 800px;
+      height: 250px;
+      margin: 0 auto 80px;
+      line-height: 530px;
+      text-align: center;
+      background-image: url(./images/img_dokdo.jpg);
+      background-repeat: no-repeat;
+      outline: 1px solid red;
+    }
+
+    .s1 {
+      background-size: 550px 50px;
+    }
+
+    .s2 {
+      background-size: auto 180px
+    }
+
+    .s3 {
+      background-size: cover;
+    }
+
+    .s4 {
+      background-size: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1 class="text-center">대한민국영토 독도</h1>
+
+    <p class="s1">background-size : 550px 50px</p>
+    <p class="s2">background-size : auto 180px</p>
+    <p class="s3">background-size : cover (박스의 세로높이에 딱맞춤)</p>
+    <p class="s4">background-size : contain (박스의 가로폭에 딱맞춤)</p>
+  </div>
+</body>
+
+</html>

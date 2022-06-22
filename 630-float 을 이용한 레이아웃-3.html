@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>630-float 을 이용한 레이아웃-3</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      width: 1390px;
+      margin: 100px auto;
+      /* border: 1px solid #000; */
+    }
+
+
+
+    header::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    header>h1>a {
+      float: left;
+      width: 250px;
+      height: 60px;
+      margin-right: 60px;
+      line-height: 60px;
+      text-align: center;
+      background-color: pink;
+    }
+
+    header>ul>li>a {
+      float: left;
+      width: 250px;
+      height: 60px;
+      margin-right: 20px;
+      line-height: 60px;
+      text-align: center;
+      background-color: yellow;
+    }
+
+    header>ul>li:last-child {
+      margin-right: 0;
+    }
+
+    section {
+
+      width: 1370px;
+      height: 600px;
+      margin-top: 20px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+
+    section>p {
+      padding-top: 20px;
+      font-size: 15px;
+      text-align: center
+    }
+
+    footer {
+      margin-top: 20px;
+      width: 1370px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1><a href="#">한국무역협회</a></h1>
+      <ul>
+        <li><a href="#">무역통상정보</a></li>
+        <li><a href="#">회원/업무지원</a></li>
+        <li><a href="#">무역통계</a></li>
+        <li><a href="#">협회안내</a></li>
+
+      </ul>
+    </header>
+
+    <hr />
+
+    <section>
+      <p>
+        하는 원대하고, 청춘에서만 피에 위하여서, 것은 곳은 듣는다. 싹이 이상의 두기 불러 봄바람을 위하여서, 실로 가장 있는 피다. 품에 있는 사는가 풀이 때까지 그들은 넣는 말이다. 이것은 광야에
+      </p>
+    </section>
+
+    <hr />
+
+    <footer>
+      <address>&copy;Designed by 김어진</address>
+    </footer>
+  </div>
+
+</body>
+
+</html>

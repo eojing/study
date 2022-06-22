@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>540-유형별 flex 레이아웃-3</title>
+  <link rel="stylesheet" href="./css/reset.css">\
+  <style>
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 960px;
+      margin: 30px auto;
+      justify-content: space-between;
+    }
+
+    header,
+    section,
+    footer {
+      width: 300px;
+    }
+
+    article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between
+    }
+
+    header>article {
+      height: 300px;
+    }
+
+    header>article:nth-of-type(2) {
+      width: 630px;
+      height: 280px;
+    }
+
+    section>.halfbox {
+      display: flex;
+      justify-content: space-between;
+
+      height: 300px;
+    }
+
+    section>.halfbox>.left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    section>.halfbox>.left>article:nth-of-type(1) {
+      width: 140px;
+      height: 140px;
+      background-color: greenyellow;
+    }
+
+    section>.halfbox>.right>article:nth-of-type(1) {
+      width: 140px;
+      height: 140px;
+      background-color: greenyellow;
+    }
+
+    section>.halfbox>.left>article:nth-of-type(2) {
+      width: 140px;
+      height: 140px;
+      background-color: greenyellow;
+    }
+
+    section>.halfbox>.right>article:nth-of-type(2) {
+      width: 140px;
+      height: 140px;
+      background-color: greenyellow;
+    }
+
+    footer>article {
+      height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <header>
+      <article style="background-color: aqua; order: -100;">1</article>
+
+      <article style="background-color: crimson;">dubble</article>
+    </header>
+
+
+    <section>
+      <div class="halfbox">
+        <div class="left">
+          <article>half1</article>
+          <article>half3</article>
+        </div>
+
+        <div class="right">
+          <article>half2</article>
+          <article>half4</article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <article style="background-color: coral;">tall</article>
+    </footer>
+  </div>
+</body>
+
+</html>

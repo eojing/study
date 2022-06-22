@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>520-유형별 flex 레이아웃-1</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      width: 1400px;
+      height: 800px;
+      margin: 50px auto;
+
+
+      box-sizing: border-box;
+
+
+      background-color: gray;
+
+    }
+
+
+
+    header>.top {
+
+      display: block;
+
+      height: 150px;
+      margin: 10px 5px;
+
+      background-color: yellow;
+
+      line-height: 150px;
+      text-align: center;
+    }
+
+
+    ul {
+      display: flex;
+      margin: bottom 10px;
+      height: 500px;
+      line-height: 500px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      text-align: center;
+
+
+    }
+
+    ul>li:nth-child(1) {
+      width: 350px;
+      margin: 0 5px;
+      background-color: aqua;
+
+    }
+
+    ul>li:nth-child(2) {
+      width: 700px;
+
+      background-color: greenyellow;
+    }
+
+    ul>li:nth-child(3) {
+      width: 350px;
+      margin: 0 5px;
+      background-color: firebrick;
+    }
+
+    footer>.footer {
+      height: 150px;
+      margin: 10px 5px 15px;
+      line-height: 150px;
+      text-align: center;
+      background-color: chocolate;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="top">
+        <h1>top</h1>
+      </div>
+    </header>
+    <section>
+      <ul>
+
+
+        <li>
+          <h1>left</h1>
+        </li>
+
+
+        <li>
+          <h1>content</h1>
+        </li>
+
+
+        <li>
+          <h1>right</h1>
+        </li>
+
+
+      </ul>
+    </section>
+    <footer>
+      <div class="footer">
+        <h1>footer</h1>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

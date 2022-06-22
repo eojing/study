@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>510-flex를 이용한 메뉴구현과 box-sizing</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <style>
+    #wrap {
+      width: 0%;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    h1 {
+      margin: 30px;
+      text-align: center;
+
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1>독도전시관</h1>
+    <ul>
+      <li> <img class="" src="./images/mnu_01.png" alt="#">1</li>
+      <li> <img src="./images/mnu_02.png" alt="#">2</li>
+      <li><img src="./images/mnu_03.png" alt="#">3</li>
+      <li> <img src="./images/mnu_04.png" alt="#">4<br /></li>
+    </ul>
+    <p>
+      <img src="./images/독도전시회.jpg" alt="#">
+    </p>
+
+    <address>Korea Dokdo</address>
+
+  </div>
+</body>
+
+</html>

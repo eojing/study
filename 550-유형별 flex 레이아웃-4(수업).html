@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>550-유형별 flex 레이아웃-4(수업)</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 980px;
+
+      height: 920px;
+      /* 임시 */
+
+      margin: 30px auto;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      order: 200;
+      width: 320px;
+
+    }
+
+    header>div {
+      width: 320px;
+      height: 250px;
+      background-color: skyblue;
+
+    }
+
+    header>div:nth-child(4) {
+      height: 140px;
+    }
+
+    section {
+      order: 100;
+      width: 650px;
+
+    }
+
+    section>.product {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between
+    }
+
+    section>.product>div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 320px;
+      height: 510px;
+      margin-bottom: 10px;
+    }
+
+
+
+    section>.product>div>p {
+      height: 250px;
+
+    }
+
+    section>.news {
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="lastbox">4</div>
+      <!-- 140 -->
+    </header>
+    <section>
+      <article class="product">
+        <div>
+          <p style="background-color: #e73c4e;">청바지</p>
+          <p style="background-color: skyblue;">운동화</p>
+        </div>
+        <div style="background-color: #e73c4e;">광고</div>
+      </article>
+
+      <article class="news" style="background-color: #e73c4e;">뉴스</article>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>530-유형별 flex 레이아웃-2</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 960px;
+      height: 1300px;
+      margin: 50px auto;
+      /* border: 1px solid black; */
+    }
+
+    header,
+    section,
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between
+    }
+
+    header>.top {
+      width: 310px;
+      background-color: coral;
+      height: 390px;
+    }
+
+    header>.content {
+      width: 310px;
+      height: 290px;
+      background-color: brown;
+    }
+
+    header>.bottom {
+      width: 310px;
+      height: 590px;
+      background-color: greenyellow;
+    }
+
+    section>.top {
+      width: 310px;
+      height: 1100px;
+      background-color: blueviolet;
+    }
+
+    section>.bottom {
+      width: 310px;
+      height: 190px;
+      background-color: brown;
+    }
+
+    footer>.top {
+      width: 310px;
+      height: 190px;
+      background-color: gray;
+    }
+
+    footer>.content {
+      width: 310px;
+      height: 790px;
+      background-color: greenyellow;
+    }
+
+    footer>.bottom {
+      width: 310px;
+      height: 290px;
+      background-color: coral;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="wrap">
+    <header>
+      <article class="top"></article>
+      <article class="content"></article>
+      <article class="bottom"></article>
+    </header>
+    <section>
+      <article class="top"></article>
+      <article class="bottom"></article>
+    </section>
+    <footer>
+      <article class="top"></article>
+      <article class="content"></article>
+      <article class="bottom"></article>
+    </footer>
+  </div>
+</body>
+
+</html>

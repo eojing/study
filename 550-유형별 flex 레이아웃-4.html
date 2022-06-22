@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>550-유형별 flex 레이아웃-4</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    #wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 30px auto;
+      width: 900px;
+      border: 1px solid #000;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 595px;
+      height: 200px;
+    }
+
+    section>.left {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between;
+      justify-content: space-between;
+      width: 295px;
+      height: 800px;
+    }
+
+    section>.left>p {
+      background-color: aquamarine;
+      width: 295px;
+      height: 100px;
+    }
+
+    section>.left>p.bottom {
+      width: 595px;
+      height: 400px;
+      background-color: brown;
+    }
+
+
+    .snb {
+      height: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <section>
+      <div class="left">
+        <p>1</p>
+        <p>2</p>
+        <p class="bottom">bottom</p>
+      </div>
+      <div class="right">
+        <p>3</p>
+      </div>
+
+    </section>
+    <div class="snb">
+      <p style="background-color: antiquewhite;">6</p>
+      <p style="background-color: antiquewhite;">6</p>
+      <p style="background-color: antiquewhite;">6</p>
+      <p style="background-color: antiquewhite;">6</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
