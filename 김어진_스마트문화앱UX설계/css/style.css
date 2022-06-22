@@ -1,0 +1,200 @@
+@charset "utf-8";
+#wrap {
+	width: 600px;
+	margin: 30px auto 0;
+}
+
+header {
+	position: relative;
+	width: 600px;
+	height: 100px;
+	background-color: #006699;
+}
+
+header > .logo {
+	display: none;
+}
+
+header > h1.text-center {
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	font-size: 30px;
+}
+
+header > h1.text-center > a,
+header > nav > ul.gnb > li > a {
+	color: white;
+}
+
+header > nav > ul.gnb {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	position: absolute;
+	left: 45%;
+	top: 50%;
+}
+
+header > nav > ul.gnb > li {
+	margin-right: 30px;
+}
+
+header > nav > ul.gnb > li:nth-child(3) > a,
+header > nav > ul.gnb > li > a:hover {
+	color: yellow;
+	text-shadow: 0 0 15px black;
+}
+
+section {
+	width: 600px;
+
+	background-color: #333333;
+}
+
+section > .box {
+	width: 580px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+section > .box > h2 {
+	margin-bottom: 30px;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+}
+
+section > .box > .visual {
+	width: 540px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+section > .box > .visual > img {
+	width: 100%;
+}
+
+section > .box > .cont {
+	width: 540px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+section > .box > .cont::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+section > .box > .cont > .mapframe {
+	width: 324px;
+	height: 250px;
+	margin-left: 6px;
+	float: right;
+	text-indent: -9999px;
+	border-radius: 5px;
+	background-image: url(./../images/기죽도약도.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 5px #333333;
+}
+
+section > .box > .cont > p {
+	text-align: justify;
+}
+
+footer {
+	display: flex;
+
+	background-color: #333333;
+	height: 100px;
+}
+
+footer > address {
+	margin-top: 50px;
+	color: white;
+}
+
+footer > .logoframe {
+	width: 40px;
+	margin: 50px 20px 0 170px;
+}
+
+footer > .logoframe > img {
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	#wrap {
+		overflow-x: hidden;
+		width: 100%;
+		margin: 0;
+	}
+
+	header {
+		width: 100%;
+		height: 90px;
+		margin: 0;
+	}
+	header > h1.text-center {
+		margin-top: -10px;
+	}
+
+	header > .logo {
+		display: block;
+		text-indent: -9999px;
+		width: 50px;
+
+		background-image: url(./../images/dokdo-white.png);
+		background-size: cover;
+
+		background-repeat: no-repeat;
+	}
+
+	header > nav {
+		display: none;
+	}
+
+	section {
+		width: 100%;
+		margin-top: -30px;
+		background-color: #fff;
+	}
+	section > .box > h2 {
+		margin: 30px 0 50px;
+	}
+
+	section > .box > .visual {
+		width: 110%;
+		margin-left: -20px;
+	}
+	section > .box > .cont {
+		width: 90%;
+		border-bottom: 3px solid #ccc;
+	}
+
+	section > .box > .cont > .mapframe {
+		width: 100%;
+		height: 400px;
+		float: none;
+		margin-bottom: 40px;
+		background-size: cover;
+	}
+
+	section > .box > .cont > p {
+		line-height: 1.8;
+		font-size: 16px;
+		font-weight: 300;
+		margin: 30px 0;
+	}
+
+	footer {
+		width: 90%;
+
+		background-color: #fff;
+	}
+	footer > address {
+		color: #000;
+	}
+}
